@@ -2,16 +2,23 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build",
+            "label": "build",
             "type": "shell",
-            "command": "C:/mingw64/bin/g++.exe",
+            "command": "g++",
             "args": [
-                "-fdiagnostics-color=always",
                 "-g",
-                "C:/tests/src/main.cpp",
+                "${workspaceFolder}/src/main.cpp",
+                "-I",
+                "C:/vcpkg/installed/x64-windows/include",
+                "-I",
+                "C:/tests/vcpkg/installed/x64-windows/include",
+                "-L",
+                "C:/vcpkg/installed/x64-windows/lib",
+                "-L",
+                "C:/tests/vcpkg/installed/x64-windows/lib",
+                "-lboost_system",
                 "-o",
-                "C:/tests/src/main.exe",
-                "-lws2_32"
+                "${workspaceFolder}/build/main.exe"
             ],
             "group": "build",
             "problemMatcher": [
