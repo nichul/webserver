@@ -1,0 +1,3 @@
+C:/tests/out/build/test/CMakeFiles/main.dir
+C:/tests/out/build/test/CMakeFiles/edit_cache.dir
+C:/tests/out/build/test/CMakeFiles/rebuild_cache.dir
