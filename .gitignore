@@ -1,0 +1,18 @@
+# vcpkg 디렉터리를 무시
+/vcpkg
+
+# 빌드 파일을 무시
+/build
+
+# 실행 파일(.exe)을 무시
+*.exe
+
+# 로그 파일과 임시 파일을 무시
+*.log
+*.tmp
+
+# CMake에서 생성한 캐시 파일을 무시
+CMakeCache.txt
+CMakeFiles/
+*.json
+.cmake/
